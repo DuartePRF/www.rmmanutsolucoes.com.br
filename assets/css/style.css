@@ -204,13 +204,28 @@ nav.navbar.bootsnav {
 }
 
 .navbar-header a.navbar-brand,
-.navbar-header a.navbar-brand:hover,
-.navbar-header a.navbar-brand:focus {
+.navbar-header a.navbar-brand,
+.navbar-header a.navbar-brand {
     color: var(--primary-color);
     font-size: 20px;
     font-weight: 700;
     padding: 34px 0px;
     text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+#imagem-menu {
+    width: 100px;
+}
+
+@media (max-width: 992px) {
+    #imagem-menu {
+        padding: 0px;
+        width: 100px;
+        margin: auto;
+    }
 }
 
 .navbar-header a.navbar-brand span {
@@ -272,6 +287,24 @@ nav.navbar.bootsnav .navbar-toggle {
 }
 nav.navbar.bootsnav .navbar-toggle i{color: #2f80e9}
 /*.navbar-toggle */
+
+.details {
+    display: none; /* Inicia como escondido */
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #4684d4; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    z-index: 10; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    transition: opacity 0.3s; /* Transição suave */
+}
+
+.single-list-topics-content:active .details {
+    display: block; /* Pode ser omitido, pois o JavaScript controla isso */
+}
+
 
 /*-------------------------------------
         4.  Welcome-hero
@@ -1132,8 +1165,10 @@ input:checked ~ .accordion-content {
 .footer-menu .navbar-header{padding:0;}
 .footer-menu .navbar-header a.navbar-brand,.footer-menu.footer-menu .navbar-header a.navbar-brand:hover,.footer-menu .navbar-header a.navbar-brand:focus{
     padding:0;
-    height: 0;
 }
+
+
+
 .footer-menu ul.footer-menu-item{text-align: right;}
 .footer-menu ul.footer-menu-item li{display: inline-block;}
 .footer-menu ul.footer-menu-item li a {

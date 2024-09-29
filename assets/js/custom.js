@@ -214,7 +214,7 @@ document.querySelector(".button1").addEventListener("click", function() {
 		  element.hidden = true;
 		}, 500); // Tempo de transição correspondente ao tempo do fade-out
 	  }
-	});
+	});	
 	
 	// Alternar o texto do botão entre "Mostrar Conteúdo" e "Esconder Conteúdo"
 	const button = document.querySelector(".button3");
@@ -222,3 +222,22 @@ document.querySelector(".button1").addEventListener("click", function() {
   });
 
 
+
+  document.querySelectorAll('.single-list-topics-content').forEach(item => {
+    const details = item.querySelector('.details');
+
+    // Mostra as informações ao pressionar
+    item.addEventListener('mousedown', function() {
+        details.style.display = 'block'; // Mostra as informações
+    });
+
+    // Esconde as informações ao soltar
+    item.addEventListener('mouseup', function() {
+        details.style.display = 'none'; // Esconde as informações
+    });
+
+    // Esconde as informações se o mouse sair do item
+    item.addEventListener('mouseleave', function() {
+        details.style.display = 'none'; // Esconde as informações
+    });
+});

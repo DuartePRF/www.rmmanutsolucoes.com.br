@@ -122,7 +122,10 @@
 			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 			                    <i class="fa fa-bars"></i>
 			                </button>
-			                <a class="navbar-brand" href="index.html">RODRIGO <span>MIRANDA</span></a>
+			                <div id="imagem-menu">
+								<img src="assets/images/explore/mobile.png" alt="" id="img-b1">
+							</div>
+
 
 			            </div><!--/.navbar-header-->
 			            <!-- End Header Navigation -->
@@ -132,7 +135,8 @@
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 			                    <li class=" scroll active"><a href="#home">Inicio</a></li>
 			                    <li class="scroll"><a href="#works">Sobre nós</a></li>
-			                    <li class="scroll"><a href="#explore">Serviços</a></li>
+			                    <li class="scroll"><a href="#explore">Industrial</a></li>
+								<li class="scroll"><a href="#expl">Residencial</a></li>
 			                    <li class="scroll"><a href="#reviews">Clientes</a></li>
 			                    <li class="scroll"><a href="#footer">Contato</a></li>
 			                </ul><!--/.nav -->
@@ -193,53 +197,64 @@
 				<div class="list-topics-content">
 					<ul>
 						<li>
-							<div class="single-list-topics-content">
+							<div class="single-list-topics-content" style="position: relative;">
 								<div class="single-list-topics-icon">
 									<i class="fas fa-lightbulb"></i>
 								</div>
 								<h2><a href="#">Iluminação</a></h2>
-								<p>acesso remoto !</p>
+								<p>Acesso remoto !</p>
+								<!-- Informações ocultas -->
+								<div class="details" style="display: none; position: absolute; top: 100%; left: 0;">
+									<p>Controle toda a iluminação da sua casa de forma remota com automação inteligente.</p>
+								</div>
 							</div>
 						</li>
 						<li>
-							<div class="single-list-topics-content">
+							<div class="single-list-topics-content" style="position: relative;">
 								<div class="single-list-topics-icon">
 									<i class="fas fa-volume-up"></i>
 								</div>
 								<h2><a href="#">Áudio e vídeo</a></h2>
-								<p>facilite sua vida !</p>
+								<p>Facilite sua vida !</p>
+								<!-- Informações ocultas -->
+								<div class="details" style="display: none; position: absolute; top: 100%; left: 0;">
+									<p>Configure e controle sistemas de áudio e vídeo com um toque, integrando em todos os ambientes.</p>
+								</div>
 							</div>
 						</li>
 						<li>
-							<div class="single-list-topics-content">
+							<div class="single-list-topics-content" style="position: relative;">
 								<div class="single-list-topics-icon">
 									<i class="fas fa-wind"></i>
 								</div>
 								<h2><a href="#">Climatização</a></h2>
-								<p>melhore seu ambiente !</p>
+								<p>Melhore seu ambiente !</p>
+								<!-- Informações ocultas -->
+								<div class="details" style="display: none; position: absolute; top: 100%; left: 0;">
+									<p>Mantenha a temperatura ideal em todos os cômodos da casa de forma automática.</p>
+								</div>
 							</div>
 						</li>
 						<li>
-							<div class="single-list-topics-content">
+							<div class="single-list-topics-content" style="position: relative;">
 								<div class="single-list-topics-icon">
 									<i class="fas fa-broadcast-tower"></i>
 								</div>
 								<h2><a href="#">Sensores</a></h2>
 								<p>Presença / Abertura</p>
+								<!-- Informações ocultas -->
+								<div class="details" style="display: none; position: absolute; top: 100%; left: 0;">
+									<p>Utilize sensores de presença e abertura de portas para maior segurança e conforto.</p>
+								</div>
 							</div>
 						</li>
-						<!--<li>
-							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
-									<i class="flaticon-transport"></i>
-								</div>
-								<h2><a href="#">automotion</a></h2>
-								<p>120 listings</p>
-							</div>
-						</li>-->
 					</ul>
 				</div>
-			</div><!--/.container-->
+			</div>
+		</section>
+		
+			
+		
 
 		</section><!--/.list-topics-->
 		<!--list-topics end-->
@@ -526,8 +541,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						
+						</div>						
 					</div>
 				</div>
 			</div>
@@ -563,7 +577,7 @@
 									</div>
 								</div>
 								<div class="single-explore-txt bg-theme-1">
-									<h2><a href="#">Aferição de risco</a></h2>
+									<h2><a href="#">Apreciação de risco</a></h2>
 									<br>
 									<span>Avaliação e análise dos riscos associados a máquinas e equipamentos, garantindo a conformidade com a NR-12 e a segurança operacional.</span>
 									<div class="explore-open-close-part">
@@ -652,7 +666,6 @@
 									</div>
 								</div>
 							</div>
-
 					</div>
 				</div>
 			</div>
@@ -677,7 +690,7 @@
 										<div class="single-explore-img">
 											<img src="assets/images/explore/e100.jpg" alt="explore image">
 											<div class="single-explore-img-info">
-												<button onclick="window.location.href='#'">Manutenção</button>
+												<button onclick="window.location.href='#'">Serviços</button>
 											</div>
 										</div>
 										<div class="single-explore-txt bg-theme-1">
@@ -701,7 +714,7 @@
 										<div class="single-explore-img">
 											<img src="assets/images/explore/e200.jpg" alt="explore image">
 											<div class="single-explore-img-info">
-												<button onclick="window.location.href='#'">Manutenção</button>
+												<button onclick="window.location.href='#'">Serviços</button>
 											</div>
 										</div>
 										<div class="single-explore-txt bg-theme-1">
@@ -725,7 +738,7 @@
 										<div class="single-explore-img">
 											<img src="assets/images/explore/e300.jpg" alt="explore image">
 											<div class="single-explore-img-info">
-												<button onclick="window.location.href='#'">Manutenção</button>
+												<button onclick="window.location.href='#'">Serviços</button>
 											</div>
 										</div>
 										<div class="single-explore-txt bg-theme-1">
@@ -750,7 +763,7 @@
 				
 			<!--/.container-->
 
-
+				<div id="expl"></div>
 			<section id="explore" class="explore">
 				<div class="container">
 					<div class="contaiiner">
@@ -989,7 +1002,6 @@
 									</div>
 								</div>
 							</div>
-			
 						</div>
 					</div>
 				</div>
