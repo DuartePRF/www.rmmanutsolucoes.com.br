@@ -149,6 +149,8 @@ document.querySelector(".button1").addEventListener("click", function() {
 
 
 
+
+
   document.querySelector(".button2").addEventListener("click", function() {
 	const hiddenElements = document.querySelectorAll(".hidden2");
 	
@@ -184,6 +186,12 @@ document.querySelector(".button1").addEventListener("click", function() {
 	const button = document.querySelector(".button2");
 	button.textContent = button.textContent === "Ver mais serviços" ? "Esconder serviços" : "Ver mais serviços";
   });
+
+
+
+
+
+
 
   document.querySelector(".button3").addEventListener("click", function() {
 	const hiddenElements = document.querySelectorAll(".hidden3");
@@ -223,6 +231,9 @@ document.querySelector(".button1").addEventListener("click", function() {
 
 
 
+
+
+
   document.querySelectorAll('.single-list-topics-content').forEach(item => {
     const details = item.querySelector('.details');
 
@@ -241,3 +252,48 @@ document.querySelector(".button1").addEventListener("click", function() {
         details.style.display = 'none'; // Esconde as informações
     });
 });
+
+
+
+
+
+document.querySelector(".button7").addEventListener("click", function() {
+	const hiddenElements = document.querySelectorAll(".hidden7");
+	
+	hiddenElements.forEach(function(element, index) {
+	  // Verifica se o elemento está visível ou oculto
+	  if (element.hidden) {
+		// Mostrar o elemento
+		element.hidden = false;
+		element.style.display = "block";
+		element.style.opacity = "0";
+		element.style.transition = "opacity 0.5s ease";
+		
+		// Suaviza a aparição dos elementos com um delay
+		setTimeout(function() {
+		  element.style.opacity = "1";
+		}, index * 300);
+		
+		// Rola suavemente até o elemento
+		element.scrollIntoView({ behavior: "smooth", block: "start" });
+	  } else {
+		// Esconder o elemento com uma transição suave
+		element.style.opacity = "0";
+		
+		// Depois de ocultar, remover o display após a transição
+		setTimeout(function() {
+		  element.style.display = "none";
+		  element.hidden = true;
+		}, 500); // Tempo de transição correspondente ao tempo do fade-out
+	  }
+	});
+	
+	// Alternar o texto do botão entre "Mostrar Conteúdo" e "Esconder Conteúdo"
+	const button = document.querySelector(".button7");
+	button.textContent = button.textContent === "Ver mais serviços" ? "Esconder serviços" : "Ver mais serviços";
+  });
+
+
+
+
+

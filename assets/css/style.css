@@ -306,6 +306,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #2f80e9}
 }
 
 
+
+
 /*-------------------------------------
         4.  Welcome-hero
 --------------------------------------*/
@@ -1026,11 +1028,40 @@ input:checked ~ .accordion-content {
     cursor:pointer;
 }
 
+.button7 {
+    border: 1px solid #1E3A8A;;
+    background-color: #60A5FA;;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 100px;
+    margin-bottom: 60px;
+    cursor:pointer;
+}
+
+.button8 {
+    border: 1px solid #1E3A8A;;
+    background-color: #60A5FA;;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 100px;
+    margin-bottom: 60px;
+    cursor:pointer;
+}
 
 .contaiiner {
     background-color: rgb(248, 254, 255);
     padding-top: 50px;
 }
+
+
 
 
 /*-------------------------------------
